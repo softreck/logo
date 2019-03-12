@@ -3,8 +3,8 @@
 ### Font
 https://fonts.google.com/specimen/Dosis?selection.family=Dosis:400,500,600
 
-### All versions of logo 
-https://softreck.github.io/logo/index.html
+### All versions of logo based on "dosis" font
+https://softreck.github.io/logo/dosis.html
 
 ### Page 
 https://softreck.github.io/logo/index.html
