@@ -1,5 +1,7 @@
 ## Welcome to GitHub Pages
 
+https://softreck.github.io/logo/
+
 [Link](dosis.html) 
 
 and ![Image](softreck_transparent_logo.png)
