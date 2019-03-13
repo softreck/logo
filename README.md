@@ -15,6 +15,14 @@ https://softreck.github.io/logo/dosis1.html
 ### All versions of logo based on "dosis" font
 https://softreck.github.io/logo/dosis2.html
 
+### Logo 3
+![Image](softreck_transparent_logo2g.png)
+
+### Logo 4
+![Image](softreck_transparent_logo3b.png)
+
+
+
 ### Page 
 https://softreck.github.io/logo/index.html
 
