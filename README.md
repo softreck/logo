@@ -21,13 +21,14 @@ https://softreck.github.io/logo/dosis2.html
 ### Logo 4
 ![Image](softreck_transparent_logo3b.png)
 
+### Logo 5
+![Image](softreck_transparent_logo5.png)
+
+### Logo 6
+![Image](softreck_transparent_logo6.png)
 
 
 ### Page 
 https://softreck.github.io/logo/index.html
 
-[Link](dosis.html) 
-
-
-
-
+[Link](dosis.html)
