@@ -3,8 +3,10 @@
 <head>
     <!--    <link rel="shortcut icon" type="image/ico" href="softreck_transparent_logo5darkblue.ico"/>-->
     <link rel="shortcut icon" type="image/png" href="softreck_transparent_logo6c.png"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
     <meta charset="UTF-8">
-<!--    <meta http-equiv="refresh" content="1; URL=/dosis6.html">-->
+    <!--    <meta http-equiv="refresh" content="1; URL=/dosis6.html">-->
     <title>Softreck</title>
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
     <style>
@@ -17,6 +19,7 @@
         p, pre {
             font-size: 16px;
         }
+
         .scheme {
             /*padding-top: 10px;*/
         }
@@ -287,24 +290,101 @@
         }
     </style>
 
+
+    <script type="text/javascript">
+        // refresh whole website
+        // window.onload = setupRefresh;
+        //
+        // function setupRefresh() {
+        //     setTimeout("refreshPage();", 200); // milliseconds
+        // }
+        // function refreshPage() {
+        //     window.location = location.href;
+        // }
+    </script>
+
+
+    <script type="text/javascript">
+        // refresh only 2thd sections on website
+
+        window.onload = setupRefresh;
+
+        function setupRefresh() {
+            setTimeout("refreshPage();", 1000); // milliseconds
+        }
+
+        /*
+                function refreshPage() {
+                    var url = location.href;
+                    // url += ' body';
+                    console.log(url);
+
+                    // $('body').load(url);
+                    $.get(url, function (data) {
+                        console.log(data);
+
+                        // var body_content = $(data).find("body");
+                        // console.log(body_content);
+                        // console.log(body_content.text());
+
+                        // $("body").html(body_content);
+                        // $("body").html(data);
+                        // alert("Load was performed.");
+                    });
+                }
+                */
+
+
+        function refreshPage() {
+
+            var url = location.href;
+            url += ' .content';
+            //url += ' *';
+
+            $("body").load(url);
+
+            /*
+            $.ajax({
+                url: url,
+                dataType: 'html',
+                success: function (data) {
+
+                    console.log(url);
+                    console.log(data);
+
+                    var body_content = $(data).find('.content');
+                    console.log(body_content);
+                    //$('.content').html(body_content);
+                }
+            });
+            */
+        }
+
+
+        /*
+                $( document ).ready(
+                    function () {
+                        $.get(url, function (data) {
+                            var body_content = $(data).find("body");
+                            console.log(body_content);
+                            $("body").html(data);
+                            // alert("Load was performed.");
+                        });
+                    }
+                );
+
+         */
+
+
+    </script>
 </head>
 <body>
 
+<div class="content">
 
-<script type="text/javascript">
-    window.onload = setupRefresh;
+    <h6 class="small">Opis modyfikacji z dnia 15.03</h6>
 
-    function setupRefresh() {
-        setTimeout("refreshPage();", 200); // milliseconds
-    }
-    function refreshPage() {
-        window.location = location.href;
-    }
-</script>
-
-<h6 class="small">Opis modyfikacji z dnia 15</h6>
-
-<pre>
+    <pre>
     Delfin został zmodyfikowany fdf  dsfsdfsdf fd fd sdffggd
     <-
     ->
@@ -317,38 +397,39 @@
     Dolna płetwa również została zmodyfikowana, obrucona w dół, gdyż po przekstałceniu zlewała się z ciałem.
 </pre>
 
-<h6>Specyfikacja</h6>
-<h6 class="small">Kolory</h6>
 
-<h6 class="small">Paleta kolorów</h6>
+    <h6>Specyfikacja</h6>
+    <h6 class="small">Kolory</h6>
 
-<div class="box1 d1"></div>
-<div class="box1 d2"></div>
-<div class="box1 d3"></div>
-<div class="box1 d4"></div>
-<div class="box1 d5"></div>
+    <h6 class="small">Paleta kolorów</h6>
 
-<pre>
+    <div class="box1 d1"></div>
+    <div class="box1 d2"></div>
+    <div class="box1 d3"></div>
+    <div class="box1 d4"></div>
+    <div class="box1 d5"></div>
+
+    <pre>
  Z palety zostały wybrane 2 kolory
 </pre>
-<div class="box1 d1">Ciemnoniebieski</div>
-<pre>
+    <div class="box1 d1">Ciemnoniebieski</div>
+    <pre>
 
  Litery, Okrąg, Delfin
 </pre>
-<div class="box1 d2">Jasnoniebieski</div>
-<pre>
+    <div class="box1 d2">Jasnoniebieski</div>
+    <pre>
 
  Fale oceanu
 </pre>
-<pre>
+    <pre>
 
  Jest jeszcze kolor Biały, wypełniający okrąg, poza okręgiem jest transparentne tło, które
  domyślnie przyjmuje w formacie png kolor tła.
 </pre>
 
-<h6 class="small">Czcionka</h6>
-<pre>
+    <h6 class="small">Czcionka</h6>
+    <pre>
 Została wykorzystana opensource:
 https://fonts.googleapis.com/css?family=Dosis:400
 
@@ -357,13 +438,13 @@ Grubość: normalna/cienka
 Małe litery, z powodu skojarzeń, mody, psychologii.
 
 </pre>
-<h6 class="small">Motto firmy</h6>
-<pre>
+    <h6 class="small">Motto firmy</h6>
+    <pre>
     Leadership Through Software Development
 </pre>
 
-<h6 class="small">Znaczenie Logotypu</h6>
-<pre>
+    <h6 class="small">Znaczenie Logotypu</h6>
+    <pre>
     Delfin jest przeskalowany, by linia jego grzbietu przebiegała równolegle do okregu
 
     Jest w locie, dynamika, lider
@@ -374,219 +455,220 @@ Małe litery, z powodu skojarzeń, mody, psychologii.
 
 </pre>
 
-<h6 class="small">Kształt loga</h6>
-<pre>
+    <h6 class="small">Kształt loga</h6>
+    <pre>
     Okrągly,
     przyklad
 
     kwadratowy,
     przyklad
 </pre>
-<h6 class="small">Pozycja loga względem tekstu</h6>
-<pre>
+    <h6 class="small">Pozycja loga względem tekstu</h6>
+    <pre>
     1. Logo w tej samej linii, logo po prawej od tekstu, wysokość tekstu = wysokość grafiki
     2. Logo w tej samej linii, logo po lewej od tekstu, wysokość tekstu = wysokość grafiki
     3. Logo na górze, tekst na dole, szerokość tekstu = szerokości grafiki
-
 </pre>
 
+    <p></p>
 
 
-
-<div class="scheme">
-
-
-<!--    <h6 class="small">Colors 1</h6>-->
-
-<!--    <div class="box1 k1"></div>-->
-<!--    <div class="box1 k2"></div>-->
-<!--    <div class="box1 k3"></div>-->
-<!--    <div class="box1 k4"></div>-->
-<!--    <div class="box1 k5"></div>-->
-<!--    <div class="box1 k6"></div>-->
+    <div class="scheme">
 
 
-<!--    <h6 class="small">Colors 2</h6>-->
+        <!--    <h6 class="small">Colors 1</h6>-->
 
-<!--    <div class="box1 m1"></div>-->
-<!--    <div class="box1 m2"></div>-->
-<!--    <div class="box1 m3"></div>-->
-<!--    <div class="box1 m4"></div>-->
-<!--    <div class="box1 m5"></div>-->
-
-
-    <!--    <h6>BW</h6>-->
-
-    <!--    <div class="black">-->
-    <!--        <div class="logo smallest sentence">-->
-    <!--            <div class="first">s</div>-->
-    <!--            <div class="logopic"><img src="softreck_transparent_logo5bw.png" width="128" alt=""></div>-->
-    <!--            <div class="last">ftreck</div>-->
-    <!--        </div>-->
-    <!--        <h5 class="smallest-sentence black">Leadership Through Software Development</h5>-->
-    <!--    </div>-->
-
-    <!--    <h6 class="small">Shadow</h6>-->
-
-    <!--    <div class="black">-->
-    <!--        <div class="logo smallest shadow sentence">-->
-    <!--            <div class="first">s</div>-->
-    <!--            <div class="logopic"><img src="softreck_transparent_logo5.png" width="128" alt=""></div>-->
-    <!--            <div class="last">ftreck</div>-->
-    <!--        </div>-->
-    <!--        <h5 class="smallest-sentence cyan">Leadership Through Software Development</h5>-->
-    <!--    </div>-->
+        <!--    <div class="box1 k1"></div>-->
+        <!--    <div class="box1 k2"></div>-->
+        <!--    <div class="box1 k3"></div>-->
+        <!--    <div class="box1 k4"></div>-->
+        <!--    <div class="box1 k5"></div>-->
+        <!--    <div class="box1 k6"></div>-->
 
 
-    <h6>Color 1</h6>
+        <!--    <h6 class="small">Colors 2</h6>-->
 
-    <div class="dt1">
-        <div class="logo smallest sentence">
-            <div class="first">s</div>
-            <div class="logopic"><img src="softreck_transparent_logo6c.png" width="128" alt=""></div>
-            <div class="last">ftreck</div>
+        <!--    <div class="box1 m1"></div>-->
+        <!--    <div class="box1 m2"></div>-->
+        <!--    <div class="box1 m3"></div>-->
+        <!--    <div class="box1 m4"></div>-->
+        <!--    <div class="box1 m5"></div>-->
+
+
+        <!--    <h6>BW</h6>-->
+
+        <!--    <div class="black">-->
+        <!--        <div class="logo smallest sentence">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo5bw.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--        <h5 class="smallest-sentence black">Leadership Through Software Development</h5>-->
+        <!--    </div>-->
+
+        <!--    <h6 class="small">Shadow</h6>-->
+
+        <!--    <div class="black">-->
+        <!--        <div class="logo smallest shadow sentence">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo5.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--        <h5 class="smallest-sentence cyan">Leadership Through Software Development</h5>-->
+        <!--    </div>-->
+
+
+        <h6>Color 1</h6>
+
+        <div class="dt1">
+            <div class="logo smallest sentence">
+                <div class="first">s</div>
+                <div class="logopic"><img src="softreck_transparent_logo6c.png" width="128" alt=""></div>
+                <div class="last">ftreck</div>
+            </div>
+            <h5 class="smallest-sentence">Leadership Through Software Development</h5>
         </div>
-        <h5 class="smallest-sentence">Leadership Through Software Development</h5>
-    </div>
 
 
-    <h6 class="small">Color 2 </h6>
+        <h6 class="small">Color 2 </h6>
 
-    <div class="dt1">
-        <div class="logo smallest sentence">
-            <div class="first">s</div>
-            <div class="logopic"><img src="softreck_transparent_logo6c.png" width="128" alt=""></div>
-            <div class="last">ftreck</div>
+        <div class="dt1">
+            <div class="logo smallest sentence">
+                <div class="first">s</div>
+                <div class="logopic"><img src="softreck_transparent_logo6c.png" width="128" alt=""></div>
+                <div class="last">ftreck</div>
+            </div>
+            <h5 class="smallest-sentence">Leadership Through Software Development</h5>
         </div>
-        <h5 class="smallest-sentence">Leadership Through Software Development</h5>
-    </div>
 
 
-    <h6 class="small">Color 3 </h6>
+        <h6 class="small">Color 3 </h6>
 
-    <div class="dt1">
-        <div class="logo smallest sentence">
-            <div class="first">s</div>
-            <div class="logopic"><img src="softreck_transparent_logo6c.png" width="128" alt=""></div>
-            <div class="last">ftreck</div>
+        <div class="dt1">
+            <div class="logo smallest sentence">
+                <div class="first">s</div>
+                <div class="logopic"><img src="softreck_transparent_logo6c.png" width="128" alt=""></div>
+                <div class="last">ftreck</div>
+            </div>
+            <h5 class="smallest-sentence dt2">Leadership Through Software Development</h5>
         </div>
-        <h5 class="smallest-sentence dt2">Leadership Through Software Development</h5>
+
+
+        <!--    <h6 class="small">Color 4 </h6>-->
+
+        <!--    <div class="dt1">-->
+        <!--        <div class="logo smallest sentence">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--        <h5 class="smallest-sentence dt2">Leadership Through Software Development</h5>-->
+        <!--    </div>-->
+
+
+        <!--    <h6 class="small">Color 4 shadow</h6>-->
+
+        <!--    <div class="dt1">-->
+        <!--        <div class="logo smallest shadow sentence">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--        <h5 class="smallest-sentence dt2">Leadership Through Software Development</h5>-->
+        <!--    </div>-->
+
+
+        <!--    <h6>Shadow + Color</h6>-->
+
+        <!--    <div class="black">-->
+        <!--        <div class="logo smallest shadow sentence">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--        <h5 class="smallest-sentence">Leadership Through Software Development</h5>-->
+
+        <!--    </div>-->
+
+
+        <!--    <div class="cyan">-->
+        <!--        <div class="logo smallest sentence">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--        <h5 class="smallest-sentence cyan">Leadership Through Software Development</h5>-->
+
+        <!--    </div>-->
+
+
+        <!--    <div class="navy">-->
+        <!--        <div class="logo smallest sentence">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--        <h5 class="smallest-sentence">Leadership Through Software Development</h5>-->
+        <!--    </div>-->
+
+
+        <!--    <div class="navy">-->
+        <!--        <div class="logo smallest shadow sentence">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--        <h5 class="smallest-sentence">Leadership Through Software Development</h5>-->
+        <!--    </div>-->
+
+
+        <!--    <h6>White - Negative</h6>-->
+
+        <!--    <div class="scheme negative">-->
+        <!--        &lt;!&ndash;        <div class="text">Softreck</div>&ndash;&gt;-->
+        <!--        &lt;!&ndash;        <div class="text">softreck</div>&ndash;&gt;-->
+        <!--        &lt;!&ndash;        <div class="logo capitalize sentence">&ndash;&gt;-->
+        <!--        &lt;!&ndash;            <div class="first">S</div>&ndash;&gt;-->
+        <!--        &lt;!&ndash;            <div class="logopic"><img src="softreck_transparent_circle_white_128.png" alt=""></div>&ndash;&gt;-->
+        <!--        &lt;!&ndash;            <div class="last">FTRECK</div>&ndash;&gt;-->
+        <!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+        <!--        &lt;!&ndash;        <h5>Leadership Through Software Development</h5>&ndash;&gt;-->
+
+        <!--        &lt;!&ndash;        <div class="logo">&ndash;&gt;-->
+        <!--        &lt;!&ndash;            <div class="first">S</div>&ndash;&gt;-->
+        <!--        &lt;!&ndash;            <div class="logopic"><img src="softreck_transparent_circle_white_128.png" alt=""></div>&ndash;&gt;-->
+        <!--        &lt;!&ndash;            <div class="last">ftreck</div>&ndash;&gt;-->
+        <!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+        <!--        <div class="logo small">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo2g.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+
+        <!--    <h6>gray</h6>-->
+
+
+        <!--    <div class="color7">-->
+
+        <!--        <div class="logo">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo2g.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+
+        <!--    <div class="color5">-->
+
+        <!--        <div class="logo">-->
+        <!--            <div class="first">s</div>-->
+        <!--            <div class="logopic"><img src="softreck_transparent_logo2g.png" width="128" alt=""></div>-->
+        <!--            <div class="last">ftreck</div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+
+
     </div>
-
-
-<!--    <h6 class="small">Color 4 </h6>-->
-
-<!--    <div class="dt1">-->
-<!--        <div class="logo smallest sentence">-->
-<!--            <div class="first">s</div>-->
-<!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
-<!--            <div class="last">ftreck</div>-->
-<!--        </div>-->
-<!--        <h5 class="smallest-sentence dt2">Leadership Through Software Development</h5>-->
-<!--    </div>-->
-
-
-<!--    <h6 class="small">Color 4 shadow</h6>-->
-
-<!--    <div class="dt1">-->
-<!--        <div class="logo smallest shadow sentence">-->
-<!--            <div class="first">s</div>-->
-<!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
-<!--            <div class="last">ftreck</div>-->
-<!--        </div>-->
-<!--        <h5 class="smallest-sentence dt2">Leadership Through Software Development</h5>-->
-<!--    </div>-->
-
-
-<!--    <h6>Shadow + Color</h6>-->
-
-<!--    <div class="black">-->
-<!--        <div class="logo smallest shadow sentence">-->
-<!--            <div class="first">s</div>-->
-<!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
-<!--            <div class="last">ftreck</div>-->
-<!--        </div>-->
-<!--        <h5 class="smallest-sentence">Leadership Through Software Development</h5>-->
-
-<!--    </div>-->
-
-
-<!--    <div class="cyan">-->
-<!--        <div class="logo smallest sentence">-->
-<!--            <div class="first">s</div>-->
-<!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
-<!--            <div class="last">ftreck</div>-->
-<!--        </div>-->
-<!--        <h5 class="smallest-sentence cyan">Leadership Through Software Development</h5>-->
-
-<!--    </div>-->
-
-
-<!--    <div class="navy">-->
-<!--        <div class="logo smallest sentence">-->
-<!--            <div class="first">s</div>-->
-<!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
-<!--            <div class="last">ftreck</div>-->
-<!--        </div>-->
-<!--        <h5 class="smallest-sentence">Leadership Through Software Development</h5>-->
-<!--    </div>-->
-
-
-<!--    <div class="navy">-->
-<!--        <div class="logo smallest shadow sentence">-->
-<!--            <div class="first">s</div>-->
-<!--            <div class="logopic"><img src="softreck_transparent_logo6.png" width="128" alt=""></div>-->
-<!--            <div class="last">ftreck</div>-->
-<!--        </div>-->
-<!--        <h5 class="smallest-sentence">Leadership Through Software Development</h5>-->
-<!--    </div>-->
-
-
-<!--    <h6>White - Negative</h6>-->
-
-<!--    <div class="scheme negative">-->
-<!--        &lt;!&ndash;        <div class="text">Softreck</div>&ndash;&gt;-->
-<!--        &lt;!&ndash;        <div class="text">softreck</div>&ndash;&gt;-->
-<!--        &lt;!&ndash;        <div class="logo capitalize sentence">&ndash;&gt;-->
-<!--        &lt;!&ndash;            <div class="first">S</div>&ndash;&gt;-->
-<!--        &lt;!&ndash;            <div class="logopic"><img src="softreck_transparent_circle_white_128.png" alt=""></div>&ndash;&gt;-->
-<!--        &lt;!&ndash;            <div class="last">FTRECK</div>&ndash;&gt;-->
-<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
-<!--        &lt;!&ndash;        <h5>Leadership Through Software Development</h5>&ndash;&gt;-->
-
-<!--        &lt;!&ndash;        <div class="logo">&ndash;&gt;-->
-<!--        &lt;!&ndash;            <div class="first">S</div>&ndash;&gt;-->
-<!--        &lt;!&ndash;            <div class="logopic"><img src="softreck_transparent_circle_white_128.png" alt=""></div>&ndash;&gt;-->
-<!--        &lt;!&ndash;            <div class="last">ftreck</div>&ndash;&gt;-->
-<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
-<!--        <div class="logo small">-->
-<!--            <div class="first">s</div>-->
-<!--            <div class="logopic"><img src="softreck_transparent_logo2g.png" width="128" alt=""></div>-->
-<!--            <div class="last">ftreck</div>-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--    <h6>gray</h6>-->
-
-
-<!--    <div class="color7">-->
-
-<!--        <div class="logo">-->
-<!--            <div class="first">s</div>-->
-<!--            <div class="logopic"><img src="softreck_transparent_logo2g.png" width="128" alt=""></div>-->
-<!--            <div class="last">ftreck</div>-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--    <div class="color5">-->
-
-<!--        <div class="logo">-->
-<!--            <div class="first">s</div>-->
-<!--            <div class="logopic"><img src="softreck_transparent_logo2g.png" width="128" alt=""></div>-->
-<!--            <div class="last">ftreck</div>-->
-<!--        </div>-->
-<!--    </div>-->
-
 
 </div>
 
