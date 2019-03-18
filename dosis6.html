@@ -286,7 +286,36 @@
 
         h6.small {
             line-height: 50px;
-            font-size: small;
+            font-size: 22px;
+            text-align: left;
+            /*float: left;*/
+        }
+
+        pre {
+            /*float: left;*/
+        }
+
+        .logosize {
+            width: auto;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            /*line-height: normal;*/
+            /*float: left;*/
+        }
+
+        .logosize img {
+            /*width: auto;*/
+            /*height: auto;*/
+            margin: 0;
+            padding: 0;
+            line-height: normal;
+            /*float: left;*/
+        }
+
+        .logosize span {
+            font-size: 32px;
+            line-height: normal;
         }
     </style>
 
@@ -307,11 +336,11 @@
     <script type="text/javascript">
         // refresh only 2thd sections on website
 
-        window.onload = setupRefresh;
+        // window.onload = setupRefresh;
 
-        function setupRefresh() {
-            setTimeout("refreshPage();", 1000); // milliseconds
-        }
+        // function setupRefresh() {
+        //     setTimeout("refreshPage();", 1000); // milliseconds
+        // }
 
         /*
                 function refreshPage() {
@@ -385,21 +414,27 @@
     <h6 class="small">Opis modyfikacji z dnia 15.03</h6>
 
     <pre>
-    Delfin został zmodyfikowany fdf  dsfsdfsdf fd fd sdffggd
-    <-
-    ->
-    Zostało powiekszony oraz poprzecznie/kształt rombu przechylony w lewo celu jego zaokrąglenia, gdyż
-    nie mieścił się w kole, obecnie mieści się i jest większy oraz płetwa tylna nie dotyka fal, a jest nad wodą.
+Delfin został zmodyfikowany
+<-
+->
+Zostało powiekszony oraz poprzecznie/kształt rombu przechylony w lewo celu jego zaokrąglenia, gdyż
+nie mieścił się w kole, obecnie mieści się i jest większy oraz płetwa tylna nie dotyka fal, a jest nad wodą.
 
 
-    Płetwa górna została przesunięta wyżej grzbietu, gdyż po przekstałceniu poprzecznym zbyt schodzila na ogon
-    dodatkowo płetwa została wyprostowana, gdyż była zbyt zaostrzona.
-    Dolna płetwa również została zmodyfikowana, obrucona w dół, gdyż po przekstałceniu zlewała się z ciałem.
+Płetwa górna została przesunięta wyżej grzbietu, gdyż po przekstałceniu poprzecznym zbyt schodzila na ogon
+dodatkowo płetwa została wyprostowana, gdyż była zbyt zaostrzona.
+Dolna płetwa również została zmodyfikowana, obrucona w dół, gdyż po przekstałceniu zlewała się z ciałem.
+
+
+Logo Przed i po modyfikacji
+<img src="softreck_transparent_logo5darkblue.png" width="256" alt=""> <img src="softreck_transparent_logo6c.png" width="256" alt="">
+
+Wazne, aby w docelowej wersji linia podkreslajaca (np. cien nad glowa delfina) byly odpowiednio dopasowane do tych zmian.
 </pre>
 
 
-    <h6>Specyfikacja</h6>
-    <h6 class="small">Kolory</h6>
+    <!--    <h6 class="small">Specyfikacja</h6>-->
+    <!--    <h6 class="small">Kolory</h6>-->
 
     <h6 class="small">Paleta kolorów</h6>
 
@@ -429,6 +464,7 @@
 </pre>
 
     <h6 class="small">Czcionka</h6>
+
     <pre>
 Została wykorzystana opensource:
 https://fonts.googleapis.com/css?family=Dosis:400
@@ -445,7 +481,7 @@ Małe litery, z powodu skojarzeń, mody, psychologii.
 
     <h6 class="small">Znaczenie Logotypu</h6>
     <pre>
-    Delfin jest przeskalowany, by linia jego grzbietu przebiegała równolegle do okregu
+    Delfin jest tak zaprojektowany, aby linia jego grzbietu przebiegała równolegle do okregu
 
     Jest w locie, dynamika, lider
     Nie dotyka już płetwą poziomu wody, gdyż oderwał się od niej lecąc
@@ -455,13 +491,13 @@ Małe litery, z powodu skojarzeń, mody, psychologii.
 
 </pre>
 
-    <h6 class="small">Kształt loga</h6>
-    <pre>
-    Okrągly,
-    przyklad
+<!--    <h6 class="small">Kształt loga</h6>-->
+<!--    <pre>-->
+<!--    Okrągly,-->
+<!--    przyklad-->
 
-    kwadratowy,
-    przyklad
+<!--    kwadratowy,-->
+<!--    przyklad-->
 </pre>
     <h6 class="small">Pozycja loga względem tekstu</h6>
     <pre>
@@ -469,6 +505,49 @@ Małe litery, z powodu skojarzeń, mody, psychologii.
     2. Logo w tej samej linii, logo po lewej od tekstu, wysokość tekstu = wysokość grafiki
     3. Logo na górze, tekst na dole, szerokość tekstu = szerokości grafiki
 </pre>
+
+
+    <h6 class="small">Wielkosci logo od 16 do 512 px</h6>
+
+    <div class="logosize">
+        <span>16px</span>
+        <img src="softreck_transparent_logo6c.png" width="16" alt="">
+    </div>
+
+    <div class="logosize">
+        <span>24px</span>
+        <img src="softreck_transparent_logo6c.png" width="24" alt="">
+    </div>
+
+    <div class="logosize">
+        <span>32px</span>
+        <img src="softreck_transparent_logo6c.png" width="32" alt="">
+    </div>
+
+    <div class="logosize">
+        <span>48px</span>
+        <img src="softreck_transparent_logo6c.png" width="48" alt="">
+    </div>
+
+    <div class="logosize">
+        <span>64px</span>
+        <img src="softreck_transparent_logo6c.png" width="64" alt="">
+    </div>
+
+    <div class="logosize">
+        <span>128px</span>
+        <img src="softreck_transparent_logo6c.png" width="128" alt="">
+    </div>
+
+    <div class="logosize">
+        <span>256px</span>
+        <img src="softreck_transparent_logo6c.png" width="256" alt="">
+    </div>
+
+    <div class="logosize">
+        <span>512px</span>
+        <img src="softreck_transparent_logo6c.png" width="512" alt="">
+    </div>
 
     <p></p>
 
@@ -518,7 +597,7 @@ Małe litery, z powodu skojarzeń, mody, psychologii.
         <!--    </div>-->
 
 
-        <h6>Color 1</h6>
+        <h6 class="small">Color</h6>
 
         <div class="dt1">
             <div class="logo smallest sentence">
@@ -530,22 +609,22 @@ Małe litery, z powodu skojarzeń, mody, psychologii.
         </div>
 
 
-        <h6 class="small">Color 2 </h6>
+        <!--        <h6 class="small">Color 2 </h6>-->
+
+        <!--        <div class="dt1">-->
+        <!--            <div class="logo smallest sentence">-->
+        <!--                <div class="first">s</div>-->
+        <!--                <div class="logopic"><img src="softreck_transparent_logo6c.png" width="128" alt=""></div>-->
+        <!--                <div class="last">ftreck</div>-->
+        <!--            </div>-->
+        <!--            <h5 class="smallest-sentence">Leadership Through Software Development</h5>-->
+        <!--        </div>-->
+
+
+        <h6 class="small">Color + shadow</h6>
 
         <div class="dt1">
-            <div class="logo smallest sentence">
-                <div class="first">s</div>
-                <div class="logopic"><img src="softreck_transparent_logo6c.png" width="128" alt=""></div>
-                <div class="last">ftreck</div>
-            </div>
-            <h5 class="smallest-sentence">Leadership Through Software Development</h5>
-        </div>
-
-
-        <h6 class="small">Color 3 </h6>
-
-        <div class="dt1">
-            <div class="logo smallest sentence">
+            <div class="logo smallest shadow sentence">
                 <div class="first">s</div>
                 <div class="logopic"><img src="softreck_transparent_logo6c.png" width="128" alt=""></div>
                 <div class="last">ftreck</div>
